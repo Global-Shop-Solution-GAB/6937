@@ -1,0 +1,1166 @@
+﻿Program.Sub.ScreenSU.Start
+Gui.f_Main..Create(BaseForm)
+Gui.f_Main..Caption("Tooling Type Maintenace (6937)")
+Gui.f_Main..Size(986,545)
+Gui.f_Main..MinX(0)
+Gui.f_Main..MinY(0)
+Gui.f_Main..Position(0,0)
+Gui.f_Main..AlwaysOnTop(False)
+Gui.f_Main..FontName("Tahoma")
+Gui.f_Main..FontSize(8.25)
+Gui.f_Main..ControlBox(True)
+Gui.f_Main..MaxButton(False)
+Gui.f_Main..MinButton(True)
+Gui.f_Main..MousePointer(0)
+Gui.f_Main..Moveable(True)
+Gui.f_Main..Sizeable(False)
+Gui.f_Main..ShowInTaskBar(True)
+Gui.f_Main..TitleBar(True)
+Gui.f_Main..Event(UnLoad,f_Main_UnLoad)
+Gui.f_Main.LayoutTab.Create(Tab)
+Gui.f_Main.LayoutTab.Enabled(False)
+Gui.f_Main.LayoutTab.Visible(True)
+Gui.f_Main.LayoutTab.Zorder(0)
+Gui.f_Main.LayoutTab.Size(1149,640)
+Gui.f_Main.LayoutTab.Position(0,50)
+Gui.f_Main.LayoutTab.FontName("Tahoma")
+Gui.f_Main.LayoutTab.FontSize(8.25)
+Gui.f_Main.LayoutTab.Anchor(15)
+Gui.f_Main.LayoutTab.Dock(0)
+Gui.f_Main.LayoutTab.Tabs(6)
+Gui.f_Main.LayoutTab.SetTab(0)
+Gui.f_Main.LayoutTab.Caption("File Formats/Press/Notes")
+Gui.f_Main.LayoutTab.SetTab(1)
+Gui.f_Main.LayoutTab.Caption("Dies")
+Gui.f_Main.LayoutTab.SetTab(2)
+Gui.f_Main.LayoutTab.Caption("Counters")
+Gui.f_Main.LayoutTab.SetTab(3)
+Gui.f_Main.LayoutTab.Caption("Strippers/Guillotines")
+Gui.f_Main.LayoutTab.SetTab(4)
+Gui.f_Main.LayoutTab.Caption("Blankers")
+Gui.f_Main.LayoutTab.SetTab(5)
+Gui.f_Main.LayoutTab.Caption("Spot Sheets/Production Mylar")
+Gui.f_Main.GsGcTab4.Create(GsGridControl)
+Gui.f_Main.GsGcTab4.Enabled(True)
+Gui.f_Main.GsGcTab4.Visible(True)
+Gui.f_Main.GsGcTab4.Zorder(0)
+Gui.f_Main.GsGcTab4.Size(982,435)
+Gui.f_Main.GsGcTab4.Position(1,0)
+Gui.f_Main.GsGcTab4.Parent("LayoutTab",5)
+Gui.f_Main.GsGcTab4.Dock(0)
+Gui.f_Main.GsGcTab4.Anchor(15)
+Gui.f_Main.GsGcTab3.Create(GsGridControl)
+Gui.f_Main.GsGcTab3.Enabled(True)
+Gui.f_Main.GsGcTab3.Visible(True)
+Gui.f_Main.GsGcTab3.Zorder(0)
+Gui.f_Main.GsGcTab3.Size(982,435)
+Gui.f_Main.GsGcTab3.Position(1,0)
+Gui.f_Main.GsGcTab3.Parent("LayoutTab",4)
+Gui.f_Main.GsGcTab3.Dock(0)
+Gui.f_Main.GsGcTab3.Anchor(15)
+Gui.f_Main.GsGcTab2.Create(GsGridControl)
+Gui.f_Main.GsGcTab2.Enabled(True)
+Gui.f_Main.GsGcTab2.Visible(True)
+Gui.f_Main.GsGcTab2.Zorder(0)
+Gui.f_Main.GsGcTab2.Size(982,435)
+Gui.f_Main.GsGcTab2.Position(0,1)
+Gui.f_Main.GsGcTab2.Parent("LayoutTab",3)
+Gui.f_Main.GsGcTab2.Dock(0)
+Gui.f_Main.GsGcTab2.Anchor(15)
+Gui.f_Main.GsGcTab5.Create(GsGridControl)
+Gui.f_Main.GsGcTab5.Enabled(True)
+Gui.f_Main.GsGcTab5.Visible(True)
+Gui.f_Main.GsGcTab5.Zorder(0)
+Gui.f_Main.GsGcTab5.Size(982,435)
+Gui.f_Main.GsGcTab5.Position(3,0)
+Gui.f_Main.GsGcTab5.Anchor(15)
+Gui.f_Main.GsGcTab5.Dock(0)
+Gui.f_Main.GsGcTab5.Parent("LayoutTab",2)
+Gui.f_Main.GsGcTab1.Create(GsGridControl)
+Gui.f_Main.GsGcTab1.Enabled(True)
+Gui.f_Main.GsGcTab1.Visible(True)
+Gui.f_Main.GsGcTab1.Zorder(0)
+Gui.f_Main.GsGcTab1.Size(982,435)
+Gui.f_Main.GsGcTab1.Position(1,0)
+Gui.f_Main.GsGcTab1.Parent("LayoutTab",1)
+Gui.f_Main.GsGcTab1.Dock(0)
+Gui.f_Main.GsGcTab1.Anchor(15)
+Gui.f_Main.GsGcTab0.Create(GsGridControl)
+Gui.f_Main.GsGcTab0.Enabled(True)
+Gui.f_Main.GsGcTab0.Visible(True)
+Gui.f_Main.GsGcTab0.Zorder(0)
+Gui.f_Main.GsGcTab0.Size(982,435)
+Gui.f_Main.GsGcTab0.Position(1,1)
+Gui.f_Main.GsGcTab0.Parent("LayoutTab",0)
+Gui.f_Main.GsGcTab0.Dock(0)
+Gui.f_Main.GsGcTab0.Anchor(15)
+Gui.f_Main.cmdSave.Create(Button)
+Gui.f_Main.cmdSave.Enabled(True)
+Gui.f_Main.cmdSave.Visible(True)
+Gui.f_Main.cmdSave.Zorder(0)
+Gui.f_Main.cmdSave.Size(75,23)
+Gui.f_Main.cmdSave.Position(818,18)
+Gui.f_Main.cmdSave.Caption("Save")
+Gui.f_Main.cmdSave.FontName("Tahoma")
+Gui.f_Main.cmdSave.FontSize(8.25)
+Gui.f_Main.cmdSave.Anchor(9)
+Gui.f_Main.cmdSave.Event(Click,cmdSave_Click)
+Gui.f_Main.cmdSave.TabStop(True)
+Gui.f_Main.cmdSave.TabIndex(4)
+Gui.f_Main.cmdCancel.Create(Button)
+Gui.f_Main.cmdCancel.Enabled(True)
+Gui.f_Main.cmdCancel.Visible(True)
+Gui.f_Main.cmdCancel.Zorder(0)
+Gui.f_Main.cmdCancel.Size(75,23)
+Gui.f_Main.cmdCancel.Position(901,18)
+Gui.f_Main.cmdCancel.Caption("Cancel")
+Gui.f_Main.cmdCancel.FontName("Tahoma")
+Gui.f_Main.cmdCancel.FontSize(8.25)
+Gui.f_Main.cmdCancel.Anchor(9)
+Gui.f_Main.cmdCancel.Event(Click,cmdCancel_Click)
+Gui.f_Main.cmdCancel.TabStop(True)
+Gui.f_Main.cmdCancel.TabIndex(5)
+Gui.f_Main.lblToolingType.Create(Label,"Tooling Type:",True,65,13,0,7,7,True,0,"Tahoma",8.25,,0,0)
+Gui.f_Main.lblToolingType.BorderStyle(0)
+Gui.f_Main.txtToolingType.Create(TextBox,"",True,100,20,0,7,25,True,0,"Tahoma",8.25,,1)
+Gui.f_Main.txtToolingType.Event(KeyPressEnter,txtToolingType_KeyPressEnter)
+Gui.f_Main.txtToolingType.TabStop(True)
+Gui.f_Main.txtToolingType.TabIndex(1)
+Gui.f_Main.cmdToolTypeBrw.Create(Button)
+Gui.f_Main.cmdToolTypeBrw.Enabled(True)
+Gui.f_Main.cmdToolTypeBrw.Visible(True)
+Gui.f_Main.cmdToolTypeBrw.Zorder(0)
+Gui.f_Main.cmdToolTypeBrw.Size(22,23)
+Gui.f_Main.cmdToolTypeBrw.Position(110,24)
+Gui.f_Main.cmdToolTypeBrw.Caption("^")
+Gui.f_Main.cmdToolTypeBrw.FontName("Tahoma")
+Gui.f_Main.cmdToolTypeBrw.FontSize(8.25)
+Gui.f_Main.cmdToolTypeBrw.Event(Click,cmdToolTypeBrw_Click)
+Gui.f_Main.cmdToolTypeBrw.TabStop(True)
+Gui.f_Main.cmdToolTypeBrw.TabIndex(3)
+Gui.f_Main.cmdNew.Create(Button)
+Gui.f_Main.cmdNew.Enabled(True)
+Gui.f_Main.cmdNew.Visible(True)
+Gui.f_Main.cmdNew.Zorder(0)
+Gui.f_Main.cmdNew.Size(75,23)
+Gui.f_Main.cmdNew.Position(735,18)
+Gui.f_Main.cmdNew.Caption("New")
+Gui.f_Main.cmdNew.FontName("Tahoma")
+Gui.f_Main.cmdNew.FontSize(8.25)
+Gui.f_Main.cmdNew.Event(Click,cmdNew_Click)
+Gui.f_Main.cmdNew.TabStop(True)
+Gui.f_Main.cmdNew.TabIndex(3)
+Program.Sub.ScreenSU.End
+
+Program.Sub.Preflight.Start
+V.Global.bError.Declare(Boolean)
+V.Global.bUnattended.Declare(Boolean)
+V.Global.sScreenFlag.Declare(String)
+Program.Sub.Preflight.End
+
+Program.Sub.Main.Start
+F.Intrinsic.Control.Try
+V.Local.sOrderNo.Declare(String)
+V.Local.sOrderLine.Declare(String)
+V.Local.sCustomer.Declare(String)
+V.Local.sSQL.Declare(String)
+V.Local.sRet.Declare(String)
+Function.Intrinsic.UI.UsePixels ' Allows you to use Pixels instead of Twips throughout
+
+'open the connection to the database
+F.ODBC.Connection!con.OpenConnection(V.Ambient.PDSN, V.Ambient.PUser, V.Ambient.PPass)
+
+F.Intrinsic.UI.InvokeWaitDialog("Loading grids...", "Please Wait")
+
+'Load tab 0 grid
+F.Intrinsic.Control.CallSub(LoadTab0Grid)
+'format tab 0 grid
+F.Intrinsic.Control.CallSub(FormatTab0Grid)
+
+'Load tab 1 grid
+F.Intrinsic.Control.CallSub(LoadTab1Grid)
+'format tab 1 grid
+F.Intrinsic.Control.CallSub(FormatTab1Grid)
+
+'Load tab 2 grid - Strippers/Guillotines
+F.Intrinsic.Control.CallSub(LoadTab2Grid)
+'format tab 2 grid
+F.Intrinsic.Control.CallSub(FormatTab2Grid)
+
+'Load tab 3 grid
+F.Intrinsic.Control.CallSub(LoadTab3Grid)
+'format tab 3 grid
+F.Intrinsic.Control.CallSub(FormatTab3Grid)
+
+'Load tab 4 grid
+F.Intrinsic.Control.CallSub(LoadTab4Grid)
+'format tab 4 grid
+F.Intrinsic.Control.CallSub(FormatTab4Grid)
+
+'Load tab 5 grid - counters
+F.Intrinsic.Control.CallSub(LoadTab5Grid)
+'format tab 5 grid
+F.Intrinsic.Control.CallSub(FormatTab5Grid)
+
+F.Intrinsic.UI.CloseWaitDialog
+
+Gui.f_Main.LayoutTab.SetTab(0)
+Gui.f_Main..ApplyTheme
+Gui.f_Main..Show
+
+F.Intrinsic.Control.Catch
+	F.Intrinsic.Control.CallSub(ErrorMessage, "ErrorNumber", V.Ambient.ErrorNumber, "ErrorDescription", V.Ambient.ErrorDescription, "Subroutine", V.Ambient.CurrentSubroutine, "UNATTENDED", V.Global.bUnattended, "Project", "6937", "ProjectTitle", "Tooling Type Setup", "Callback", "Unload")
+F.Intrinsic.Control.EndTry
+Program.Sub.Main.End
+
+Program.Sub.LoadTab0Grid.Start
+F.Intrinsic.Control.Try
+
+'check to see if the datatable exists
+F.Intrinsic.Control.If(V.DataTable.dtTab0.Exists,=,True)
+	F.Data.DataTable.Close("dtTab0")
+F.Intrinsic.Control.EndIf
+
+'create the datatable
+F.Data.DataTable.Create("dtTab0", True)
+F.Data.DataTable.AddColumn("dtTab0", "ATLAS_FILE_TYPE", "STRING")
+F.Data.DataTable.AddColumn("dtTab0", "LAYOUT_FILE_VIEW", "STRING")
+F.Data.DataTable.AddColumn("dtTab0", "VIEW_1UP_FILE", "STRING")
+F.Data.DataTable.AddColumn("dtTab0", "DIE_CUT_VIEW", "STRING")
+F.Data.DataTable.AddColumn("dtTab0", "PRESS_PAPER_FEED", "STRING")
+
+F.Intrinsic.Control.ExitSub
+F.Intrinsic.Control.Catch
+	F.Intrinsic.Control.CallSub(ErrorMessage, "ErrorNumber", V.Ambient.ErrorNumber, "ErrorDescription", V.Ambient.ErrorDescription, "Subroutine", V.Ambient.CurrentSubroutine, "UNATTENDED", V.Global.bUnattended, "Project", "6937", "ProjectTitle", "Tooling Type Setup", "Callback", "Unload")
+F.Intrinsic.Control.EndTry
+Program.Sub.LoadTab0Grid.End
+
+Program.Sub.FormatTab0Grid.Start
+F.Intrinsic.Control.Try
+V.Local.sDefault.Declare(String)
+V.Local.sGV.Declare(String)
+V.Local.sProperty.Declare(String)
+
+'add gridview
+Gui.f_Main.GsGcTab0.AddGridviewFromDatatable("gvTab0", "dtTab0")
+V.Local.sGV.Set("gvTab0")
+
+Gui.f_Main.GsGcTab0.SetGridviewProperty(V.Local.sGV, "MultiSelect", False)
+Gui.f_Main.GsGcTab0.SetGridviewProperty(V.Local.sGV, "AllowFilter", True)
+Gui.f_Main.GsGcTab0.SetGridviewProperty(V.Local.sGV, "OptionsViewShowGroupPanel", False)
+Gui.f_Main.GsGcTab0.SetGridviewProperty(V.Local.sGV, "EnableAppearanceOddRow", False)
+Gui.f_Main.GsGcTab0.SetGridviewProperty(V.Local.sGV, "AllowColumnResizing", True)
+Gui.f_Main.GsGcTab0.SetGridviewProperty(V.Local.sGV, "AllowColumnMoving", True)
+Gui.f_Main.GsGcTab0.SetGridviewProperty(V.Local.sGV, "Editable", True)
+Gui.f_Main.GsGcTab0.SetGridviewProperty(V.Local.sGV, "AllowAddRows", True)
+Gui.f_Main.GsGcTab0.SetGridviewProperty(V.Local.sGV, "AllowDeleteRows", True)
+
+V.Local.sProperty.Set("Caption")
+V.Local.sDefault.Set(" ")
+Gui.f_Main.GsGcTab0.SetColumnProperty(V.Local.sGV, "ATLAS_FILE_TYPE", V.Local.sProperty, "File Types Sent to Atlas")
+Gui.f_Main.GsGcTab0.SetColumnProperty(V.Local.sGV, "LAYOUT_FILE_VIEW", V.Local.sProperty, "View of Layout File")
+Gui.f_Main.GsGcTab0.SetColumnProperty(V.Local.sGV, "VIEW_1UP_FILE", V.Local.sProperty, "View of 1Up File")
+Gui.f_Main.GsGcTab0.SetColumnProperty(V.Local.sGV, "DIE_CUT_VIEW", V.Local.sProperty, "View that is Die Cut")
+Gui.f_Main.GsGcTab0.SetColumnProperty(V.Local.sGV, "PRESS_PAPER_FEED", V.Local.sProperty, "Paper Feed thru Machine")
+
+V.Local.sProperty.Set("HeaderFontBold")
+V.Local.sDefault.Set("True")
+Gui.f_Main.GsGcTab0.SetColumnProperty(V.Local.sGV, "ATLAS_FILE_TYPE", V.Local.sProperty, V.Local.sDefault)
+Gui.f_Main.GsGcTab0.SetColumnProperty(V.Local.sGV, "LAYOUT_FILE_VIEW", V.Local.sProperty, V.Local.sDefault)
+Gui.f_Main.GsGcTab0.SetColumnProperty(V.Local.sGV, "VIEW_1UP_FILE", V.Local.sProperty,V.Local.sDefault)
+Gui.f_Main.GsGcTab0.SetColumnProperty(V.Local.sGV, "DIE_CUT_VIEW", V.Local.sProperty, V.Local.sDefault)
+Gui.f_Main.GsGcTab0.SetColumnProperty(V.Local.sGV, "PRESS_PAPER_FEED", V.Local.sProperty, V.Local.sDefault)
+
+V.Local.sProperty.Set("AllowEdit")
+V.Local.sDefault.Set("True")
+Gui.f_Main.GsGcTab0.SetColumnProperty(V.Local.sGV, "ATLAS_FILE_TYPE", V.Local.sProperty, V.Local.sDefault)
+Gui.f_Main.GsGcTab0.SetColumnProperty(V.Local.sGV, "LAYOUT_FILE_VIEW", V.Local.sProperty, V.Local.sDefault)
+Gui.f_Main.GsGcTab0.SetColumnProperty(V.Local.sGV, "VIEW_1UP_FILE", V.Local.sProperty,V.Local.sDefault)
+Gui.f_Main.GsGcTab0.SetColumnProperty(V.Local.sGV, "DIE_CUT_VIEW", V.Local.sProperty, V.Local.sDefault)
+Gui.f_Main.GsGcTab0.SetColumnProperty(V.Local.sGV, "PRESS_PAPER_FEED", V.Local.sProperty, V.Local.sDefault)
+
+V.Local.sProperty.Set("ReadOnly")
+V.Local.sDefault.Set("False")
+Gui.f_Main.GsGcTab0.SetColumnProperty(V.Local.sGV, "ATLAS_FILE_TYPE", V.Local.sProperty, V.Local.sDefault)
+Gui.f_Main.GsGcTab0.SetColumnProperty(V.Local.sGV, "LAYOUT_FILE_VIEW", V.Local.sProperty, V.Local.sDefault)
+Gui.f_Main.GsGcTab0.SetColumnProperty(V.Local.sGV, "VIEW_1UP_FILE", V.Local.sProperty,V.Local.sDefault)
+Gui.f_Main.GsGcTab0.SetColumnProperty(V.Local.sGV, "DIE_CUT_VIEW", V.Local.sProperty, V.Local.sDefault)
+Gui.f_Main.GsGcTab0.SetColumnProperty(V.Local.sGV, "PRESS_PAPER_FEED", V.Local.sProperty, V.Local.sDefault)
+
+
+Gui.f_Main.GsGcTab0.MainView(V.Local.sGV)
+
+F.Intrinsic.Control.ExitSub
+
+F.Intrinsic.Control.Catch
+	F.Intrinsic.Control.CallSub(ErrorMessage, "ErrorNumber", V.Ambient.ErrorNumber, "ErrorDescription", V.Ambient.ErrorDescription, "Subroutine", V.Ambient.CurrentSubroutine, "UNATTENDED", V.Global.bUnattended, "Project", "6937", "ProjectTitle", "Tooling Type Setup", "Callback", "Unload")
+F.Intrinsic.Control.EndTry
+Program.Sub.FormatTab0Grid.End
+
+Program.Sub.LoadTab1Grid.Start
+F.Intrinsic.Control.Try
+
+'check to see if the datatable exists
+F.Intrinsic.Control.If(V.DataTable.dtTab1.Exists,=,True)
+	F.Data.DataTable.Close("dtTab1")
+F.Intrinsic.Control.EndIf
+
+'create the datatable
+F.Data.DataTable.Create("dtTab1", True)
+F.Data.DataTable.AddColumn("dtTab1", "DIEBOARD_MATERIAL", "STRING")
+F.Data.DataTable.AddColumn("dtTab1", "DIE_OFFSET_LOC", "STRING")
+F.Data.DataTable.AddColumn("dtTab1", "DIE_CUT_RLE_KNIFE_PT", "STRING")
+F.Data.DataTable.AddColumn("dtTab1", "DIE_HARDWRE_TYPE", "STRING")
+F.Data.DataTable.AddColumn("dtTab1", "DIE_HARDWRE_SIZE", "STRING")
+F.Data.DataTable.AddColumn("dtTab1", "DIE_SHEET_NICK_SIZE", "STRING")
+F.Data.DataTable.AddColumn("dtTab1", "DIE_RUBR_TYPE_MANUF", "STRING")
+F.Data.DataTable.AddColumn("dtTab1", "DIE_EJECT_PUNCH", "STRING")
+F.Data.DataTable.AddColumn("dtTab1", "DIE_EXTRA_RULE_PACK", "STRING")
+F.Data.DataTable.AddColumn("dtTab1", "DIE_EXTRA_RULE_NICK", "STRING")
+
+F.Intrinsic.Control.ExitSub
+F.Intrinsic.Control.Catch
+	F.Intrinsic.Control.CallSub(ErrorMessage, "ErrorNumber", V.Ambient.ErrorNumber, "ErrorDescription", V.Ambient.ErrorDescription, "Subroutine", V.Ambient.CurrentSubroutine, "UNATTENDED", V.Global.bUnattended, "Project", "6937", "ProjectTitle", "Tooling Type Setup", "Callback", "Unload")
+F.Intrinsic.Control.EndTry
+Program.Sub.LoadTab1Grid.End
+
+Program.Sub.FormatTab1Grid.Start
+F.Intrinsic.Control.Try
+V.Local.sDefault.Declare(String)
+V.Local.sGV.Declare(String)
+V.Local.sProperty.Declare(String)
+
+'add gridview
+Gui.f_Main.GsGcTab1.AddGridviewFromDatatable("gvTab1", "dtTab1")
+V.Local.sGV.Set("gvTab1")
+
+Gui.f_Main.GsGcTab1.SetGridviewProperty(V.Local.sGV, "MultiSelect", False)
+Gui.f_Main.GsGcTab1.SetGridviewProperty(V.Local.sGV, "AllowFilter", True)
+Gui.f_Main.GsGcTab1.SetGridviewProperty(V.Local.sGV, "OptionsViewShowGroupPanel", False)
+Gui.f_Main.GsGcTab1.SetGridviewProperty(V.Local.sGV, "EnableAppearanceOddRow", False)
+Gui.f_Main.GsGcTab1.SetGridviewProperty(V.Local.sGV, "AllowColumnResizing", True)
+Gui.f_Main.GsGcTab1.SetGridviewProperty(V.Local.sGV, "AllowColumnMoving", True)
+Gui.f_Main.GsGcTab1.SetGridviewProperty(V.Local.sGV, "Editable", True)
+Gui.f_Main.GsGcTab1.SetGridviewProperty(V.Local.sGV, "AllowAddRows", True)
+Gui.f_Main.GsGcTab1.SetGridviewProperty(V.Local.sGV, "AllowDeleteRows", True)
+
+V.Local.sProperty.Set("Caption")
+V.Local.sDefault.Set(" ")
+Gui.f_Main.GsGcTab1.SetColumnProperty(V.Local.sGV, "DIEBOARD_MATERIAL", V.Local.sProperty, "Dieboard Material")
+Gui.f_Main.GsGcTab1.SetColumnProperty(V.Local.sGV, "DIE_OFFSET_LOC", V.Local.sProperty, "Dieboard Offset")
+Gui.f_Main.GsGcTab1.SetColumnProperty(V.Local.sGV, "DIE_CUT_RLE_KNIFE_PT", V.Local.sProperty, "Cut Rule Knife Pointage")
+Gui.f_Main.GsGcTab1.SetColumnProperty(V.Local.sGV, "DIE_HARDWRE_TYPE", V.Local.sProperty, "Die Hardware Type")
+Gui.f_Main.GsGcTab1.SetColumnProperty(V.Local.sGV, "DIE_HARDWRE_SIZE", V.Local.sProperty, "Die Hardware Size")
+Gui.f_Main.GsGcTab1.SetColumnProperty(V.Local.sGV, "DIE_SHEET_NICK_SIZE", V.Local.sProperty, "Die Sheet nick size")
+Gui.f_Main.GsGcTab1.SetColumnProperty(V.Local.sGV, "DIE_RUBR_TYPE_MANUF", V.Local.sProperty, "Die Rubber Type & Manuf.")
+Gui.f_Main.GsGcTab1.SetColumnProperty(V.Local.sGV, "DIE_EJECT_PUNCH", V.Local.sProperty, "Die Ejection Type")
+Gui.f_Main.GsGcTab1.SetColumnProperty(V.Local.sGV, "DIE_EXTRA_RULE_PACK", V.Local.sProperty, "Die Extra Rule Packaging")
+Gui.f_Main.GsGcTab1.SetColumnProperty(V.Local.sGV, "DIE_EXTRA_RULE_NICK", V.Local.sProperty, "Die Extra Rule Nicking")
+
+V.Local.sProperty.Set("HeaderFontBold")
+V.Local.sDefault.Set("True")
+Gui.f_Main.GsGcTab1.SetColumnProperty(V.Local.sGV, "DIEBOARD_MATERIAL", V.Local.sProperty, V.Local.sDefault)
+Gui.f_Main.GsGcTab1.SetColumnProperty(V.Local.sGV, "DIE_OFFSET_LOC", V.Local.sProperty, V.Local.sDefault)
+Gui.f_Main.GsGcTab1.SetColumnProperty(V.Local.sGV, "DIE_CUT_RLE_KNIFE_PT", V.Local.sProperty, V.Local.sDefault)
+Gui.f_Main.GsGcTab1.SetColumnProperty(V.Local.sGV, "DIE_HARDWRE_TYPE", V.Local.sProperty, V.Local.sDefault)
+Gui.f_Main.GsGcTab1.SetColumnProperty(V.Local.sGV, "DIE_HARDWRE_SIZE", V.Local.sProperty, V.Local.sDefault)
+Gui.f_Main.GsGcTab1.SetColumnProperty(V.Local.sGV, "DIE_SHEET_NICK_SIZE", V.Local.sProperty, V.Local.sDefault)
+Gui.f_Main.GsGcTab1.SetColumnProperty(V.Local.sGV, "DIE_RUBR_TYPE_MANUF", V.Local.sProperty, V.Local.sDefault)
+Gui.f_Main.GsGcTab1.SetColumnProperty(V.Local.sGV, "DIE_EJECT_PUNCH", V.Local.sProperty, V.Local.sDefault)
+Gui.f_Main.GsGcTab1.SetColumnProperty(V.Local.sGV, "DIE_EXTRA_RULE_PACK", V.Local.sProperty, V.Local.sDefault)
+Gui.f_Main.GsGcTab1.SetColumnProperty(V.Local.sGV, "DIE_EXTRA_RULE_NICK", V.Local.sProperty, V.Local.sDefault)
+
+V.Local.sProperty.Set("AllowEdit")
+V.Local.sDefault.Set("True")
+Gui.f_Main.GsGcTab1.SetColumnProperty(V.Local.sGV, "DIEBOARD_MATERIAL", V.Local.sProperty, V.Local.sDefault)
+Gui.f_Main.GsGcTab1.SetColumnProperty(V.Local.sGV, "DIE_OFFSET_LOC", V.Local.sProperty, V.Local.sDefault)
+Gui.f_Main.GsGcTab1.SetColumnProperty(V.Local.sGV, "DIE_CUT_RLE_KNIFE_PT", V.Local.sProperty, V.Local.sDefault)
+Gui.f_Main.GsGcTab1.SetColumnProperty(V.Local.sGV, "DIE_HARDWRE_TYPE", V.Local.sProperty, V.Local.sDefault)
+Gui.f_Main.GsGcTab1.SetColumnProperty(V.Local.sGV, "DIE_HARDWRE_SIZE", V.Local.sProperty, V.Local.sDefault)
+Gui.f_Main.GsGcTab1.SetColumnProperty(V.Local.sGV, "DIE_SHEET_NICK_SIZE", V.Local.sProperty, V.Local.sDefault)
+Gui.f_Main.GsGcTab1.SetColumnProperty(V.Local.sGV, "DIE_RUBR_TYPE_MANUF", V.Local.sProperty, V.Local.sDefault)
+Gui.f_Main.GsGcTab1.SetColumnProperty(V.Local.sGV, "DIE_EJECT_PUNCH", V.Local.sProperty, V.Local.sDefault)
+Gui.f_Main.GsGcTab1.SetColumnProperty(V.Local.sGV, "DIE_EXTRA_RULE_PACK", V.Local.sProperty, V.Local.sDefault)
+Gui.f_Main.GsGcTab1.SetColumnProperty(V.Local.sGV, "DIE_EXTRA_RULE_NICK", V.Local.sProperty, V.Local.sDefault)
+
+V.Local.sProperty.Set("ReadOnly")
+V.Local.sDefault.Set("False")
+Gui.f_Main.GsGcTab1.SetColumnProperty(V.Local.sGV, "DIEBOARD_MATERIAL", V.Local.sProperty, V.Local.sDefault)
+Gui.f_Main.GsGcTab1.SetColumnProperty(V.Local.sGV, "DIE_OFFSET_LOC", V.Local.sProperty, V.Local.sDefault)
+Gui.f_Main.GsGcTab1.SetColumnProperty(V.Local.sGV, "DIE_CUT_RLE_KNIFE_PT", V.Local.sProperty, V.Local.sDefault)
+Gui.f_Main.GsGcTab1.SetColumnProperty(V.Local.sGV, "DIE_HARDWRE_TYPE", V.Local.sProperty, V.Local.sDefault)
+Gui.f_Main.GsGcTab1.SetColumnProperty(V.Local.sGV, "DIE_HARDWRE_SIZE", V.Local.sProperty, V.Local.sDefault)
+Gui.f_Main.GsGcTab1.SetColumnProperty(V.Local.sGV, "DIE_SHEET_NICK_SIZE", V.Local.sProperty, V.Local.sDefault)
+Gui.f_Main.GsGcTab1.SetColumnProperty(V.Local.sGV, "DIE_RUBR_TYPE_MANUF", V.Local.sProperty, V.Local.sDefault)
+Gui.f_Main.GsGcTab1.SetColumnProperty(V.Local.sGV, "DIE_EJECT_PUNCH", V.Local.sProperty, V.Local.sDefault)
+Gui.f_Main.GsGcTab1.SetColumnProperty(V.Local.sGV, "DIE_EXTRA_RULE_PACK", V.Local.sProperty, V.Local.sDefault)
+Gui.f_Main.GsGcTab1.SetColumnProperty(V.Local.sGV, "DIE_EXTRA_RULE_NICK", V.Local.sProperty, V.Local.sDefault)
+
+V.Local.sProperty.Set("MinWidth")
+V.Local.sDefault.Set("175")
+Gui.f_Main.GsGcTab1.SetColumnProperty(V.Local.sGV, "DIEBOARD_MATERIAL", V.Local.sProperty, V.Local.sDefault)
+Gui.f_Main.GsGcTab1.SetColumnProperty(V.Local.sGV, "DIE_OFFSET_LOC", V.Local.sProperty, V.Local.sDefault)
+Gui.f_Main.GsGcTab1.SetColumnProperty(V.Local.sGV, "DIE_CUT_RLE_KNIFE_PT", V.Local.sProperty, V.Local.sDefault)
+Gui.f_Main.GsGcTab1.SetColumnProperty(V.Local.sGV, "DIE_HARDWRE_TYPE", V.Local.sProperty, V.Local.sDefault)
+Gui.f_Main.GsGcTab1.SetColumnProperty(V.Local.sGV, "DIE_HARDWRE_SIZE", V.Local.sProperty, V.Local.sDefault)
+Gui.f_Main.GsGcTab1.SetColumnProperty(V.Local.sGV, "DIE_SHEET_NICK_SIZE", V.Local.sProperty, V.Local.sDefault)
+Gui.f_Main.GsGcTab1.SetColumnProperty(V.Local.sGV, "DIE_RUBR_TYPE_MANUF", V.Local.sProperty, V.Local.sDefault)
+Gui.f_Main.GsGcTab1.SetColumnProperty(V.Local.sGV, "DIE_EJECT_PUNCH", V.Local.sProperty, V.Local.sDefault)
+Gui.f_Main.GsGcTab1.SetColumnProperty(V.Local.sGV, "DIE_EXTRA_RULE_PACK", V.Local.sProperty, V.Local.sDefault)
+Gui.f_Main.GsGcTab1.SetColumnProperty(V.Local.sGV, "DIE_EXTRA_RULE_NICK", V.Local.sProperty, V.Local.sDefault)
+
+Gui.f_Main.GsGcTab1.MainView(V.Local.sGV)
+
+F.Intrinsic.Control.ExitSub
+F.Intrinsic.Control.Catch
+	F.Intrinsic.Control.CallSub(ErrorMessage, "ErrorNumber", V.Ambient.ErrorNumber, "ErrorDescription", V.Ambient.ErrorDescription, "Subroutine", V.Ambient.CurrentSubroutine, "UNATTENDED", V.Global.bUnattended, "Project", "6937", "ProjectTitle", "Tooling Type Setup", "Callback", "Unload")
+F.Intrinsic.Control.EndTry
+Program.Sub.FormatTab1Grid.End
+
+Program.Sub.LoadTab2Grid.Start
+F.Intrinsic.Control.Try
+
+'check to see if the datatable exists
+F.Intrinsic.Control.If(V.DataTable.dtTab2.Exists,=,True)
+	F.Data.DataTable.Close("dtTab2")
+F.Intrinsic.Control.EndIf
+
+'create the datatable
+F.Data.DataTable.Create("dtTab2", True)
+
+F.Data.DataTable.AddColumn("dtTab2", "UP_STRIP_TYPE","STRING")
+F.Data.DataTable.AddColumn("dtTab2", "MAX_USU_SIZE","STRING")
+F.Data.DataTable.AddColumn("dtTab2", "UP_STRIP_GRIP_OFFST","STRING")
+F.Data.DataTable.AddColumn("dtTab2", "UP_STRP_GRP_TYPE","STRING")
+F.Data.DataTable.AddColumn("dtTab2", "LOW_STRP_TYPE","STRING")
+F.Data.DataTable.AddColumn("dtTab2", "LSU_GRIP_OFFSET","STRING")
+F.Data.DataTable.AddColumn("dtTab2", "LSU_SUPP_RAILS","STRING")
+F.Data.DataTable.AddColumn("dtTab2", "LSU_SHT_LIFT_STYLE","STRING")
+F.Data.DataTable.AddColumn("dtTab2", "LSU_REAR_STRIP","STRING")
+F.Data.DataTable.AddColumn("dtTab2", "LSU_PIN_INSTALL_DIR","STRING")
+
+F.Intrinsic.Control.ExitSub
+F.Intrinsic.Control.Catch
+	F.Intrinsic.Control.CallSub(ErrorMessage, "ErrorNumber", V.Ambient.ErrorNumber, "ErrorDescription", V.Ambient.ErrorDescription, "Subroutine", V.Ambient.CurrentSubroutine, "UNATTENDED", V.Global.bUnattended, "Project", "6937", "ProjectTitle", "Tooling Type Setup", "Callback", "Unload")
+F.Intrinsic.Control.EndTry
+Program.Sub.LoadTab2Grid.End
+
+Program.Sub.FormatTab2Grid.Start
+F.Intrinsic.Control.Try
+V.Local.sDefault.Declare(String)
+V.Local.sGV.Declare(String)
+V.Local.sProperty.Declare(String)
+
+'add gridview
+Gui.f_Main.GsGcTab2.AddGridviewFromDatatable("gvTab2", "dtTab2")
+V.Local.sGV.Set("gvTab2")
+
+Gui.f_Main.GsGcTab2.SetGridviewProperty(V.Local.sGV, "MultiSelect", False)
+Gui.f_Main.GsGcTab2.SetGridviewProperty(V.Local.sGV, "AllowFilter", True)
+Gui.f_Main.GsGcTab2.SetGridviewProperty(V.Local.sGV, "OptionsViewShowGroupPanel", False)
+Gui.f_Main.GsGcTab2.SetGridviewProperty(V.Local.sGV, "EnableAppearanceOddRow", False)
+Gui.f_Main.GsGcTab2.SetGridviewProperty(V.Local.sGV, "AllowColumnResizing", True)
+Gui.f_Main.GsGcTab2.SetGridviewProperty(V.Local.sGV, "AllowColumnMoving", True)
+Gui.f_Main.GsGcTab2.SetGridviewProperty(V.Local.sGV, "Editable", True)
+Gui.f_Main.GsGcTab2.SetGridviewProperty(V.Local.sGV, "AllowAddRows", True)
+Gui.f_Main.GsGcTab2.SetGridviewProperty(V.Local.sGV, "AllowDeleteRows", True)
+
+V.Local.sProperty.Set("Caption")
+V.Local.sDefault.Set(" ")
+Gui.f_Main.GsGcTab2.SetColumnProperty(V.Local.sGV, "UP_STRIP_TYPE", V.Local.sProperty, "Upper Stripper Type")
+Gui.f_Main.GsGcTab2.SetColumnProperty(V.Local.sGV, "MAX_USU_SIZE", V.Local.sProperty, "Max USU Base Size")
+Gui.f_Main.GsGcTab2.SetColumnProperty(V.Local.sGV, "UP_STRIP_GRIP_OFFST", V.Local.sProperty, "Gripper Offset For Upper Strippers")
+Gui.f_Main.GsGcTab2.SetColumnProperty(V.Local.sGV, "UP_STRP_GRP_TYPE", V.Local.sProperty, "Gripper Line Mark Type")
+Gui.f_Main.GsGcTab2.SetColumnProperty(V.Local.sGV, "LOW_STRP_TYPE", V.Local.sProperty, "Lower Stripper Type")
+Gui.f_Main.GsGcTab2.SetColumnProperty(V.Local.sGV, "LSU_GRIP_OFFSET", V.Local.sProperty, "Gripper Offset for Lower Strippers")
+Gui.f_Main.GsGcTab2.SetColumnProperty(V.Local.sGV, "LSU_SUPP_RAILS", V.Local.sProperty, "Lower Support Rails")
+Gui.f_Main.GsGcTab2.SetColumnProperty(V.Local.sGV, "LSU_SHT_LIFT_STYLE", V.Local.sProperty, "Lower Support Sheet Lifter Style")
+Gui.f_Main.GsGcTab2.SetColumnProperty(V.Local.sGV, "LSU_REAR_STRIP", V.Local.sProperty, "Rear Stripping Ears")
+Gui.f_Main.GsGcTab2.SetColumnProperty(V.Local.sGV, "LSU_PIN_INSTALL_DIR", V.Local.sProperty, "Lower Stripping Pin Rail Install Direction")
+
+V.Local.sProperty.Set("HeaderFontBold")
+V.Local.sDefault.Set("True")
+Gui.f_Main.GsGcTab2.SetColumnProperty(V.Local.sGV, "UP_STRIP_TYPE", V.Local.sProperty, V.Local.sDefault)
+Gui.f_Main.GsGcTab2.SetColumnProperty(V.Local.sGV, "MAX_USU_SIZE", V.Local.sProperty, V.Local.sDefault)
+Gui.f_Main.GsGcTab2.SetColumnProperty(V.Local.sGV, "UP_STRIP_GRIP_OFFST", V.Local.sProperty, V.Local.sDefault)
+Gui.f_Main.GsGcTab2.SetColumnProperty(V.Local.sGV, "UP_STRP_GRP_TYPE", V.Local.sProperty, V.Local.sDefault)
+Gui.f_Main.GsGcTab2.SetColumnProperty(V.Local.sGV, "LOW_STRP_TYPE", V.Local.sProperty, V.Local.sDefault)
+Gui.f_Main.GsGcTab2.SetColumnProperty(V.Local.sGV, "LSU_GRIP_OFFSET", V.Local.sProperty, V.Local.sDefault)
+Gui.f_Main.GsGcTab2.SetColumnProperty(V.Local.sGV, "LSU_SUPP_RAILS", V.Local.sProperty, V.Local.sDefault)
+Gui.f_Main.GsGcTab2.SetColumnProperty(V.Local.sGV, "LSU_SHT_LIFT_STYLE", V.Local.sProperty, V.Local.sDefault)
+Gui.f_Main.GsGcTab2.SetColumnProperty(V.Local.sGV, "LSU_REAR_STRIP", V.Local.sProperty, V.Local.sDefault)
+Gui.f_Main.GsGcTab2.SetColumnProperty(V.Local.sGV, "LSU_PIN_INSTALL_DIR", V.Local.sProperty, V.Local.sDefault)
+
+V.Local.sProperty.Set("AllowEdit")
+V.Local.sDefault.Set("True")
+Gui.f_Main.GsGcTab2.SetColumnProperty(V.Local.sGV, "UP_STRIP_TYPE", V.Local.sProperty, V.Local.sDefault)
+Gui.f_Main.GsGcTab2.SetColumnProperty(V.Local.sGV, "MAX_USU_SIZE", V.Local.sProperty, V.Local.sDefault)
+Gui.f_Main.GsGcTab2.SetColumnProperty(V.Local.sGV, "UP_STRIP_GRIP_OFFST", V.Local.sProperty, V.Local.sDefault)
+Gui.f_Main.GsGcTab2.SetColumnProperty(V.Local.sGV, "UP_STRP_GRP_TYPE", V.Local.sProperty, V.Local.sDefault)
+Gui.f_Main.GsGcTab2.SetColumnProperty(V.Local.sGV, "LOW_STRP_TYPE", V.Local.sProperty, V.Local.sDefault)
+Gui.f_Main.GsGcTab2.SetColumnProperty(V.Local.sGV, "LSU_GRIP_OFFSET", V.Local.sProperty, V.Local.sDefault)
+Gui.f_Main.GsGcTab2.SetColumnProperty(V.Local.sGV, "LSU_SUPP_RAILS", V.Local.sProperty, V.Local.sDefault)
+Gui.f_Main.GsGcTab2.SetColumnProperty(V.Local.sGV, "LSU_SHT_LIFT_STYLE", V.Local.sProperty, V.Local.sDefault)
+Gui.f_Main.GsGcTab2.SetColumnProperty(V.Local.sGV, "LSU_REAR_STRIP", V.Local.sProperty, V.Local.sDefault)
+Gui.f_Main.GsGcTab2.SetColumnProperty(V.Local.sGV, "LSU_PIN_INSTALL_DIR", V.Local.sProperty, V.Local.sDefault)
+
+V.Local.sProperty.Set("ReadOnly")
+V.Local.sDefault.Set("False")
+Gui.f_Main.GsGcTab2.SetColumnProperty(V.Local.sGV, "UP_STRIP_TYPE", V.Local.sProperty, V.Local.sDefault)
+Gui.f_Main.GsGcTab2.SetColumnProperty(V.Local.sGV, "MAX_USU_SIZE", V.Local.sProperty, V.Local.sDefault)
+Gui.f_Main.GsGcTab2.SetColumnProperty(V.Local.sGV, "UP_STRIP_GRIP_OFFST", V.Local.sProperty, V.Local.sDefault)
+Gui.f_Main.GsGcTab2.SetColumnProperty(V.Local.sGV, "UP_STRP_GRP_TYPE", V.Local.sProperty, V.Local.sDefault)
+Gui.f_Main.GsGcTab2.SetColumnProperty(V.Local.sGV, "LOW_STRP_TYPE", V.Local.sProperty, V.Local.sDefault)
+Gui.f_Main.GsGcTab2.SetColumnProperty(V.Local.sGV, "LSU_GRIP_OFFSET", V.Local.sProperty, V.Local.sDefault)
+Gui.f_Main.GsGcTab2.SetColumnProperty(V.Local.sGV, "LSU_SUPP_RAILS", V.Local.sProperty, V.Local.sDefault)
+Gui.f_Main.GsGcTab2.SetColumnProperty(V.Local.sGV, "LSU_SHT_LIFT_STYLE", V.Local.sProperty, V.Local.sDefault)
+Gui.f_Main.GsGcTab2.SetColumnProperty(V.Local.sGV, "LSU_REAR_STRIP", V.Local.sProperty, V.Local.sDefault)
+Gui.f_Main.GsGcTab2.SetColumnProperty(V.Local.sGV, "LSU_PIN_INSTALL_DIR", V.Local.sProperty, V.Local.sDefault)
+
+V.Local.sProperty.Set("MinWidth")
+V.Local.sDefault.Set("175")
+Gui.f_Main.GsGcTab2.SetColumnProperty(V.Local.sGV, "UP_STRIP_TYPE", V.Local.sProperty, V.Local.sDefault)
+Gui.f_Main.GsGcTab2.SetColumnProperty(V.Local.sGV, "MAX_USU_SIZE", V.Local.sProperty, V.Local.sDefault)
+Gui.f_Main.GsGcTab2.SetColumnProperty(V.Local.sGV, "UP_STRIP_GRIP_OFFST", V.Local.sProperty, V.Local.sDefault)
+Gui.f_Main.GsGcTab2.SetColumnProperty(V.Local.sGV, "UP_STRP_GRP_TYPE", V.Local.sProperty, V.Local.sDefault)
+Gui.f_Main.GsGcTab2.SetColumnProperty(V.Local.sGV, "LOW_STRP_TYPE", V.Local.sProperty, V.Local.sDefault)
+Gui.f_Main.GsGcTab2.SetColumnProperty(V.Local.sGV, "LSU_GRIP_OFFSET", V.Local.sProperty, V.Local.sDefault)
+Gui.f_Main.GsGcTab2.SetColumnProperty(V.Local.sGV, "LSU_SUPP_RAILS", V.Local.sProperty, V.Local.sDefault)
+Gui.f_Main.GsGcTab2.SetColumnProperty(V.Local.sGV, "LSU_SHT_LIFT_STYLE", V.Local.sProperty, V.Local.sDefault)
+Gui.f_Main.GsGcTab2.SetColumnProperty(V.Local.sGV, "LSU_REAR_STRIP", V.Local.sProperty, V.Local.sDefault)
+Gui.f_Main.GsGcTab2.SetColumnProperty(V.Local.sGV, "LSU_PIN_INSTALL_DIR", V.Local.sProperty, V.Local.sDefault)
+
+Gui.f_Main.GsGcTab2.MainView(V.Local.sGV)
+F.Intrinsic.Control.ExitSub
+
+F.Intrinsic.Control.Catch
+	F.Intrinsic.Control.CallSub(ErrorMessage, "ErrorNumber", V.Ambient.ErrorNumber, "ErrorDescription", V.Ambient.ErrorDescription, "Subroutine", V.Ambient.CurrentSubroutine, "UNATTENDED", V.Global.bUnattended, "Project", "6937", "ProjectTitle", "Tooling Type Setup", "Callback", "Unload")
+F.Intrinsic.Control.EndTry
+Program.Sub.FormatTab2Grid.End
+
+Program.Sub.LoadTab3Grid.Start
+F.Intrinsic.Control.Try
+
+'Check to see if the datatable exists
+F.Intrinsic.Control.If(V.DataTable.dtTab3.Exists,=,True)
+	F.Data.DataTable.Close("dtTab3")
+F.Intrinsic.Control.EndIf
+
+'create the datatable
+F.Data.DataTable.Create("dtTab3", True)
+F.Data.DataTable.AddColumn("dtTab3", "UP_BLNK_PUSHER", "STRING")
+F.Data.DataTable.AddColumn("dtTab3", "UB_PUSH_CLEAR", "STRING")
+F.Data.DataTable.AddColumn("dtTab3", "UB_MAX_SIZE", "STRING")
+F.Data.DataTable.AddColumn("dtTab3", "UB_GRIPPER", "STRING")
+F.Data.DataTable.AddColumn("dtTab3", "UB_GRIP_LN_TYPE", "STRING")
+F.Data.DataTable.AddColumn("dtTab3", "UB_PRESS_BAR_STYLE", "STRING")
+F.Data.DataTable.AddColumn("dtTab3", "UB_PRESS_BAR_INSTALL", "STRING")
+F.Data.DataTable.AddColumn("dtTab3", "LB_TYPE", "STRING")
+F.Data.DataTable.AddColumn("dtTab3", "LB_JOG_TYPE", "STRING")
+F.Data.DataTable.AddColumn("dtTab3", "LB_PRESS_SWORD_TYPE", "STRING")
+F.Data.DataTable.AddColumn("dtTab3", "LB_ELEC_EYE_LOC", "STRING")
+
+F.Intrinsic.Control.ExitSub
+
+F.Intrinsic.Control.Catch
+	F.Intrinsic.Control.CallSub(ErrorMessage, "ErrorNumber", V.Ambient.ErrorNumber, "ErrorDescription", V.Ambient.ErrorDescription, "Subroutine", V.Ambient.CurrentSubroutine, "UNATTENDED", V.Global.bUnattended, "Project", "6937", "ProjectTitle", "Tooling Type Setup", "Callback", "Unload")
+F.Intrinsic.Control.EndTry
+Program.Sub.LoadTab3Grid.End
+
+Program.Sub.FormatTab3Grid.Start
+F.Intrinsic.Control.Try
+V.Local.sDefault.Declare(String)
+V.Local.sGV.Declare(String)
+V.Local.sProperty.Declare(String)
+
+'add gridview
+Gui.f_Main.GsGcTab3.AddGridviewFromDatatable("gvTab3", "dtTab3")
+V.Local.sGV.Set("gvTab3")
+
+Gui.f_Main.GsGcTab3.SetGridviewProperty(V.Local.sGV, "MultiSelect", False)
+Gui.f_Main.GsGcTab3.SetGridviewProperty(V.Local.sGV, "AllowFilter", True)
+Gui.f_Main.GsGcTab3.SetGridviewProperty(V.Local.sGV, "OptionsViewShowGroupPanel", False)
+Gui.f_Main.GsGcTab3.SetGridviewProperty(V.Local.sGV, "EnableAppearanceOddRow", False)
+Gui.f_Main.GsGcTab3.SetGridviewProperty(V.Local.sGV, "AllowColumnResizing", True)
+Gui.f_Main.GsGcTab3.SetGridviewProperty(V.Local.sGV, "Editable", True)
+Gui.f_Main.GsGcTab3.SetGridviewProperty(V.Local.sGV, "AllowAddRows", True)
+Gui.f_Main.GsGcTab3.SetGridviewProperty(V.Local.sGV, "AllowDeleteRows", True)
+
+V.Local.sProperty.Set("Caption")
+V.Local.sDefault.Set(" ")
+Gui.f_Main.GsGcTab3.SetColumnProperty(V.Local.sGV, "UP_BLNK_PUSHER", V.Local.sProperty, "Upper Blankers Pusher")
+Gui.f_Main.GsGcTab3.SetColumnProperty(V.Local.sGV, "UB_PUSH_CLEAR", V.Local.sProperty, "Upper Blankers Pusher Clearance")
+Gui.f_Main.GsGcTab3.SetColumnProperty(V.Local.sGV, "UB_MAX_SIZE", V.Local.sProperty, "Upper Blankers Max Size")
+Gui.f_Main.GsGcTab3.SetColumnProperty(V.Local.sGV, "UB_GRIPPER", V.Local.sProperty, "Upper Blnkers Gripper")
+Gui.f_Main.GsGcTab3.SetColumnProperty(V.Local.sGV, "UB_GRIP_LN_TYPE", V.Local.sProperty, "Upper Blankers Gripper Line Type")
+Gui.f_Main.GsGcTab3.SetColumnProperty(V.Local.sGV, "UB_PRESS_BAR_STYLE", V.Local.sProperty, "Upper Blankers Press Bar Style")
+Gui.f_Main.GsGcTab3.SetColumnProperty(V.Local.sGV, "UB_PRESS_BAR_INSTALL", V.Local.sProperty, "Upper Blankers Press Bar Install")
+Gui.f_Main.GsGcTab3.SetColumnProperty(V.Local.sGV, "LB_TYPE", V.Local.sProperty, "Lower Blankers Type")
+Gui.f_Main.GsGcTab3.SetColumnProperty(V.Local.sGV, "LB_JOG_TYPE", V.Local.sProperty, "Lower Blankers Jogger Type")
+Gui.f_Main.GsGcTab3.SetColumnProperty(V.Local.sGV, "LB_PRESS_SWORD_TYPE", V.Local.sProperty, "Lower Blankers Sword Type")
+Gui.f_Main.GsGcTab3.SetColumnProperty(V.Local.sGV, "LB_ELEC_EYE_LOC", V.Local.sProperty, "Lower Blankers Electric Eye Loc")
+
+V.Local.sProperty.Set("HeaderFontBold")
+V.Local.sDefault.Set("True")
+Gui.f_Main.GsGcTab3.SetColumnProperty(V.Local.sGV, "UP_BLNK_PUSHER", V.Local.sProperty, V.Local.sDefault)
+Gui.f_Main.GsGcTab3.SetColumnProperty(V.Local.sGV, "UB_PUSH_CLEAR", V.Local.sProperty, V.Local.sDefault)
+Gui.f_Main.GsGcTab3.SetColumnProperty(V.Local.sGV, "UB_MAX_SIZE", V.Local.sProperty, V.Local.sDefault)
+Gui.f_Main.GsGcTab3.SetColumnProperty(V.Local.sGV, "UB_GRIPPER", V.Local.sProperty, V.Local.sDefault)
+Gui.f_Main.GsGcTab3.SetColumnProperty(V.Local.sGV, "UB_GRIP_LN_TYPE", V.Local.sProperty, V.Local.sDefault)
+Gui.f_Main.GsGcTab3.SetColumnProperty(V.Local.sGV, "UB_PRESS_BAR_STYLE", V.Local.sProperty, V.Local.sDefault)
+Gui.f_Main.GsGcTab3.SetColumnProperty(V.Local.sGV, "UB_PRESS_BAR_INSTALL", V.Local.sProperty, V.Local.sDefault)
+Gui.f_Main.GsGcTab3.SetColumnProperty(V.Local.sGV, "LB_TYPE", V.Local.sProperty, V.Local.sDefault)
+Gui.f_Main.GsGcTab3.SetColumnProperty(V.Local.sGV, "LB_JOG_TYPE", V.Local.sProperty, V.Local.sDefault)
+Gui.f_Main.GsGcTab3.SetColumnProperty(V.Local.sGV, "LB_PRESS_SWORD_TYPE", V.Local.sProperty, V.Local.sDefault)
+Gui.f_Main.GsGcTab3.SetColumnProperty(V.Local.sGV, "LB_ELEC_EYE_LOC", V.Local.sProperty, V.Local.sDefault)
+
+V.Local.sProperty.Set("AllowEdit")
+V.Local.sDefault.Set("True")
+Gui.f_Main.GsGcTab3.SetColumnProperty(V.Local.sGV, "UP_BLNK_PUSHER", V.Local.sProperty, V.Local.sDefault)
+Gui.f_Main.GsGcTab3.SetColumnProperty(V.Local.sGV, "UB_PUSH_CLEAR", V.Local.sProperty, V.Local.sDefault)
+Gui.f_Main.GsGcTab3.SetColumnProperty(V.Local.sGV, "UB_MAX_SIZE", V.Local.sProperty, V.Local.sDefault)
+Gui.f_Main.GsGcTab3.SetColumnProperty(V.Local.sGV, "UB_GRIPPER", V.Local.sProperty, V.Local.sDefault)
+Gui.f_Main.GsGcTab3.SetColumnProperty(V.Local.sGV, "UB_GRIP_LN_TYPE", V.Local.sProperty, V.Local.sDefault)
+Gui.f_Main.GsGcTab3.SetColumnProperty(V.Local.sGV, "UB_PRESS_BAR_STYLE", V.Local.sProperty, V.Local.sDefault)
+Gui.f_Main.GsGcTab3.SetColumnProperty(V.Local.sGV, "UB_PRESS_BAR_INSTALL", V.Local.sProperty, V.Local.sDefault)
+Gui.f_Main.GsGcTab3.SetColumnProperty(V.Local.sGV, "LB_TYPE", V.Local.sProperty, V.Local.sDefault)
+Gui.f_Main.GsGcTab3.SetColumnProperty(V.Local.sGV, "LB_JOG_TYPE", V.Local.sProperty, V.Local.sDefault)
+Gui.f_Main.GsGcTab3.SetColumnProperty(V.Local.sGV, "LB_PRESS_SWORD_TYPE", V.Local.sProperty, V.Local.sDefault)
+Gui.f_Main.GsGcTab3.SetColumnProperty(V.Local.sGV, "LB_ELEC_EYE_LOC", V.Local.sProperty, V.Local.sDefault)
+
+V.Local.sProperty.Set("ReadOnly")
+V.Local.sDefault.Set("False")
+Gui.f_Main.GsGcTab3.SetColumnProperty(V.Local.sGV, "UP_BLNK_PUSHER", V.Local.sProperty, V.Local.sDefault)
+Gui.f_Main.GsGcTab3.SetColumnProperty(V.Local.sGV, "UB_PUSH_CLEAR", V.Local.sProperty, V.Local.sDefault)
+Gui.f_Main.GsGcTab3.SetColumnProperty(V.Local.sGV, "UB_MAX_SIZE", V.Local.sProperty, V.Local.sDefault)
+Gui.f_Main.GsGcTab3.SetColumnProperty(V.Local.sGV, "UB_GRIPPER", V.Local.sProperty, V.Local.sDefault)
+Gui.f_Main.GsGcTab3.SetColumnProperty(V.Local.sGV, "UB_GRIP_LN_TYPE", V.Local.sProperty, V.Local.sDefault)
+Gui.f_Main.GsGcTab3.SetColumnProperty(V.Local.sGV, "UB_PRESS_BAR_STYLE", V.Local.sProperty, V.Local.sDefault)
+Gui.f_Main.GsGcTab3.SetColumnProperty(V.Local.sGV, "UB_PRESS_BAR_INSTALL", V.Local.sProperty, V.Local.sDefault)
+Gui.f_Main.GsGcTab3.SetColumnProperty(V.Local.sGV, "LB_TYPE", V.Local.sProperty, V.Local.sDefault)
+Gui.f_Main.GsGcTab3.SetColumnProperty(V.Local.sGV, "LB_JOG_TYPE", V.Local.sProperty, V.Local.sDefault)
+Gui.f_Main.GsGcTab3.SetColumnProperty(V.Local.sGV, "LB_PRESS_SWORD_TYPE", V.Local.sProperty, V.Local.sDefault)
+Gui.f_Main.GsGcTab3.SetColumnProperty(V.Local.sGV, "LB_ELEC_EYE_LOC", V.Local.sProperty, V.Local.sDefault)
+
+V.Local.sProperty.Set("MinWidth")
+V.Local.sDefault.Set("175")
+Gui.f_Main.GsGcTab3.SetColumnProperty(V.Local.sGV, "UP_BLNK_PUSHER", V.Local.sProperty, V.Local.sDefault)
+Gui.f_Main.GsGcTab3.SetColumnProperty(V.Local.sGV, "UB_PUSH_CLEAR", V.Local.sProperty, V.Local.sDefault)
+Gui.f_Main.GsGcTab3.SetColumnProperty(V.Local.sGV, "UB_MAX_SIZE", V.Local.sProperty, V.Local.sDefault)
+Gui.f_Main.GsGcTab3.SetColumnProperty(V.Local.sGV, "UB_GRIPPER", V.Local.sProperty, V.Local.sDefault)
+Gui.f_Main.GsGcTab3.SetColumnProperty(V.Local.sGV, "UB_GRIP_LN_TYPE", V.Local.sProperty, V.Local.sDefault)
+Gui.f_Main.GsGcTab3.SetColumnProperty(V.Local.sGV, "UB_PRESS_BAR_STYLE", V.Local.sProperty, V.Local.sDefault)
+Gui.f_Main.GsGcTab3.SetColumnProperty(V.Local.sGV, "UB_PRESS_BAR_INSTALL", V.Local.sProperty, V.Local.sDefault)
+Gui.f_Main.GsGcTab3.SetColumnProperty(V.Local.sGV, "LB_TYPE", V.Local.sProperty, V.Local.sDefault)
+Gui.f_Main.GsGcTab3.SetColumnProperty(V.Local.sGV, "LB_JOG_TYPE", V.Local.sProperty, V.Local.sDefault)
+Gui.f_Main.GsGcTab3.SetColumnProperty(V.Local.sGV, "LB_PRESS_SWORD_TYPE", V.Local.sProperty, V.Local.sDefault)
+Gui.f_Main.GsGcTab3.SetColumnProperty(V.Local.sGV, "LB_ELEC_EYE_LOC", V.Local.sProperty, V.Local.sDefault)
+
+Gui.f_Main.GsGcTab3.MainView(V.Local.sGV)
+F.Intrinsic.Control.ExitSub
+F.Intrinsic.Control.Catch
+	F.Intrinsic.Control.CallSub(ErrorMessage, "ErrorNumber", V.Ambient.ErrorNumber, "ErrorDescription", V.Ambient.ErrorDescription, "Subroutine", V.Ambient.CurrentSubroutine, "UNATTENDED", V.Global.bUnattended, "Project", "6937", "ProjectTitle", "Tooling Type Setup", "Callback", "Unload")
+F.Intrinsic.Control.EndTry
+Program.Sub.FormatTab3Grid.End
+
+Program.Sub.LoadTab4Grid.Start
+F.Intrinsic.Control.Try
+
+'check to see if the datatable exists
+F.Intrinsic.Control.If(V.DataTable.dtTab4.Exists,=,True)
+	F.Data.DataTable.Close("dtTab4")
+F.Intrinsic.Control.EndIf
+
+'create the datatable
+F.Data.DataTable.Create("dtTab4", True)
+F.Data.DataTable.AddColumn("dtTab4", "SPOTSHEET_CUT_SHAPE", "STRING")
+F.Data.DataTable.AddColumn("dtTab4", "SPOTSHEET_THICK", "STRING")
+F.Data.DataTable.AddColumn("dtTab4", "SPOTSHEET_MAT", "STRING")
+F.Data.DataTable.AddColumn("dtTab4", "PM_EMAIL_FMT", "STRING")
+
+F.Intrinsic.Control.ExitSub
+F.Intrinsic.Control.Catch
+	F.Intrinsic.Control.CallSub(ErrorMessage, "ErrorNumber", V.Ambient.ErrorNumber, "ErrorDescription", V.Ambient.ErrorDescription, "Subroutine", V.Ambient.CurrentSubroutine, "UNATTENDED", V.Global.bUnattended, "Project", "6937", "ProjectTitle", "Tooling Type Setup", "Callback", "Unload")
+F.Intrinsic.Control.EndTry
+Program.Sub.LoadTab4Grid.End
+
+Program.Sub.FormatTab4Grid.Start
+F.Intrinsic.Control.Try
+V.Local.sDefault.Declare(String)
+V.Local.sGV.Declare(String)
+V.Local.sProperty.Declare(String)
+
+'add gridview
+Gui.f_Main.GsGcTab4.AddGridviewFromDatatable("gvTab4", "dtTab4")
+V.Local.sGV.Set("gvTab4")
+
+Gui.f_Main.GsGcTab4.SetGridviewProperty(V.Local.sGV, "MultiSelect", False)
+Gui.f_Main.GsGcTab4.SetGridviewProperty(V.Local.sGV, "AllowFilter", True)
+Gui.f_Main.GsGcTab4.SetGridviewProperty(V.Local.sGV, "OptionsViewShowGroupPanel", False)
+Gui.f_Main.GsGcTab4.SetGridviewProperty(V.Local.sGV, "EnableAppearanceOddRow", False)
+Gui.f_Main.GsGcTab4.SetGridviewProperty(V.Local.sGV, "OptionsViewColumnAutoWidth", True)
+Gui.f_Main.GsGcTab4.SetGridviewProperty(V.Local.sGV, "AllowColumnResizing", True)
+Gui.f_Main.GsGcTab4.SetGridviewProperty(V.Local.sGV, "AllowColumnMoving", True)
+Gui.f_Main.GsGcTab4.SetGridviewProperty(V.Local.sGV, "Editable", True)
+Gui.f_Main.GsGcTab4.SetGridviewProperty(V.Local.sGV, "AllowAddRows", True)
+Gui.f_Main.GsGcTab4.SetGridviewProperty(V.Local.sGV, "AllowDeleteRows", True)
+
+V.Local.sProperty.Set("Caption")
+V.Local.sDefault.Set(" ")
+Gui.f_Main.GsGcTab4.SetColumnProperty(V.Local.sGV, "SPOTSHEET_CUT_SHAPE", V.Local.sProperty, "Spot Sheet Cut")
+Gui.f_Main.GsGcTab4.SetColumnProperty(V.Local.sGV, "SPOTSHEET_THICK", V.Local.sProperty, "Spot Sheet Thickness")
+Gui.f_Main.GsGcTab4.SetColumnProperty(V.Local.sGV, "SPOTSHEET_MAT", V.Local.sProperty, "Spot Sheet Material")
+Gui.f_Main.GsGcTab4.SetColumnProperty(V.Local.sGV, "PM_EMAIL_FMT", V.Local.sProperty, "Prod. Mylar Plate Maker Email Format")
+
+V.Local.sProperty.Set("HeaderFontBold")
+V.Local.sDefault.Set("True")
+Gui.f_Main.GsGcTab4.SetColumnProperty(V.Local.sGV, "SPOTSHEET_CUT_SHAPE", V.Local.sProperty, V.Local.sDefault)
+Gui.f_Main.GsGcTab4.SetColumnProperty(V.Local.sGV, "SPOTSHEET_THICK", V.Local.sProperty, V.Local.sDefault)
+Gui.f_Main.GsGcTab4.SetColumnProperty(V.Local.sGV, "SPOTSHEET_MAT", V.Local.sProperty, V.Local.sDefault)
+Gui.f_Main.GsGcTab4.SetColumnProperty(V.Local.sGV, "PM_EMAIL_FMT", V.Local.sProperty, V.Local.sDefault)
+
+V.Local.sProperty.Set("AllowEdit")
+V.Local.sDefault.Set("True")
+Gui.f_Main.GsGcTab4.SetColumnProperty(V.Local.sGV, "SPOTSHEET_CUT_SHAPE", V.Local.sProperty, V.Local.sDefault)
+Gui.f_Main.GsGcTab4.SetColumnProperty(V.Local.sGV, "SPOTSHEET_THICK", V.Local.sProperty, V.Local.sDefault)
+Gui.f_Main.GsGcTab4.SetColumnProperty(V.Local.sGV, "SPOTSHEET_MAT", V.Local.sProperty, V.Local.sDefault)
+Gui.f_Main.GsGcTab4.SetColumnProperty(V.Local.sGV, "PM_EMAIL_FMT", V.Local.sProperty, V.Local.sDefault)
+
+V.Local.sProperty.Set("ReadOnly")
+V.Local.sDefault.Set("False")
+Gui.f_Main.GsGcTab4.SetColumnProperty(V.Local.sGV, "SPOTSHEET_CUT_SHAPE", V.Local.sProperty, V.Local.sDefault)
+Gui.f_Main.GsGcTab4.SetColumnProperty(V.Local.sGV, "SPOTSHEET_THICK", V.Local.sProperty, V.Local.sDefault)
+Gui.f_Main.GsGcTab4.SetColumnProperty(V.Local.sGV, "SPOTSHEET_MAT", V.Local.sProperty, V.Local.sDefault)
+Gui.f_Main.GsGcTab4.SetColumnProperty(V.Local.sGV, "PM_EMAIL_FMT", V.Local.sProperty, V.Local.sDefault)
+
+Gui.f_Main.GsGcTab4.MainView(V.Local.sGV)
+
+F.Intrinsic.Control.Catch
+	F.Intrinsic.Control.CallSub(ErrorMessage, "ErrorNumber", V.Ambient.ErrorNumber, "ErrorDescription", V.Ambient.ErrorDescription, "Subroutine", V.Ambient.CurrentSubroutine, "UNATTENDED", V.Global.bUnattended, "Project", "6937", "ProjectTitle", "Tooling Type Setup", "Callback", "Unload")
+F.Intrinsic.Control.EndTry
+Program.Sub.FormatTab4Grid.End
+
+Program.Sub.LoadTab5Grid.Start
+F.Intrinsic.Control.Try
+
+'check to see if the datatable exists
+F.Intrinsic.Control.If(V.DataTable.dtTab5.Exists,=,True)
+	F.Data.DataTable.Close("dtTab5")
+F.Intrinsic.Control.EndIf
+
+'create the datatable
+F.Data.DataTable.Create("dtTab5", True)
+
+F.Data.DataTable.AddColumn("dtTab5", "PHENOLIC_MAT_TYPE","STRING")
+F.Data.DataTable.AddColumn("dtTab5", "PHENOLIC_GLUE_AST","STRING")
+F.Data.DataTable.AddColumn("dtTab5", "STEEL_COUNT_TYPE","STRING")
+
+F.Intrinsic.Control.Catch
+	F.Intrinsic.Control.CallSub(ErrorMessage, "ErrorNumber", V.Ambient.ErrorNumber, "ErrorDescription", V.Ambient.ErrorDescription, "Subroutine", V.Ambient.CurrentSubroutine, "UNATTENDED", V.Global.bUnattended, "Project", "6937", "ProjectTitle", "Tooling Type Setup", "Callback", "Unload")
+F.Intrinsic.Control.EndTry
+Program.Sub.LoadTab5Grid.End
+
+Program.Sub.FormatTab5Grid.Start
+F.Intrinsic.Control.Try
+V.Local.sDefault.Declare(String)
+V.Local.sGV.Declare(String)
+V.Local.sProperty.Declare(String)
+
+'add gridview
+Gui.f_Main.GsGcTab5.AddGridviewFromDatatable("gvTab5", "dtTab5")
+V.Local.sGV.Set("gvTab5")
+
+Gui.f_Main.GsGcTab5.SetGridviewProperty(V.Local.sGV, "MultiSelect", False)
+Gui.f_Main.GsGcTab5.SetGridviewProperty(V.Local.sGV, "AllowFilter", True)
+Gui.f_Main.GsGcTab5.SetGridviewProperty(V.Local.sGV, "OptionsViewShowGroupPanel", False)
+Gui.f_Main.GsGcTab5.SetGridviewProperty(V.Local.sGV, "EnableAppearanceOddRow", False)
+Gui.f_Main.GsGcTab5.SetGridviewProperty(V.Local.sGV, "OptionsViewColumnAutoWidth", True)
+Gui.f_Main.GsGcTab5.SetGridviewProperty(V.Local.sGV, "AllowColumnResizing", True)
+Gui.f_Main.GsGcTab5.SetGridviewProperty(V.Local.sGV, "AllowColumnMoving", True)
+Gui.f_Main.GsGcTab5.SetGridviewProperty(V.Local.sGV, "Editable", True)
+Gui.f_Main.GsGcTab5.SetGridviewProperty(V.Local.sGV, "AllowAddRows", True)
+Gui.f_Main.GsGcTab5.SetGridviewProperty(V.Local.sGV, "AllowDeleteRows", True)
+
+V.Local.sProperty.Set("Caption")
+V.Local.sDefault.Set(" ")
+Gui.f_Main.GsGcTab5.SetColumnProperty(V.Local.sGV, "PHENOLIC_MAT_TYPE", V.Local.sProperty, "Phenolic Material Type")
+Gui.f_Main.GsGcTab5.SetColumnProperty(V.Local.sGV, "PHENOLIC_GLUE_AST", V.Local.sProperty, "Glue Assist Hit Location")
+Gui.f_Main.GsGcTab5.SetColumnProperty(V.Local.sGV, "STEEL_COUNT_TYPE", V.Local.sProperty, "Steel Counter Type")
+
+V.Local.sProperty.Set("HeaderFontBold")
+V.Local.sDefault.Set("True")
+Gui.f_Main.GsGcTab5.SetColumnProperty(V.Local.sGV, "PHENOLIC_MAT_TYPE", V.Local.sProperty, V.Local.sDefault)
+Gui.f_Main.GsGcTab5.SetColumnProperty(V.Local.sGV, "PHENOLIC_GLUE_AST", V.Local.sProperty, V.Local.sDefault)
+Gui.f_Main.GsGcTab5.SetColumnProperty(V.Local.sGV, "STEEL_COUNT_TYPE", V.Local.sProperty, V.Local.sDefault)
+
+V.Local.sProperty.Set("AllowEdit")
+V.Local.sDefault.Set("True")
+Gui.f_Main.GsGcTab5.SetColumnProperty(V.Local.sGV, "PHENOLIC_MAT_TYPE", V.Local.sProperty, V.Local.sDefault)
+Gui.f_Main.GsGcTab5.SetColumnProperty(V.Local.sGV, "PHENOLIC_GLUE_AST", V.Local.sProperty, V.Local.sDefault)
+Gui.f_Main.GsGcTab5.SetColumnProperty(V.Local.sGV, "STEEL_COUNT_TYPE", V.Local.sProperty, V.Local.sDefault)
+
+V.Local.sProperty.Set("ReadOnly")
+V.Local.sDefault.Set("False")
+Gui.f_Main.GsGcTab5.SetColumnProperty(V.Local.sGV, "PHENOLIC_MAT_TYPE", V.Local.sProperty, V.Local.sDefault)
+Gui.f_Main.GsGcTab5.SetColumnProperty(V.Local.sGV, "PHENOLIC_GLUE_AST", V.Local.sProperty, V.Local.sDefault)
+Gui.f_Main.GsGcTab5.SetColumnProperty(V.Local.sGV, "STEEL_COUNT_TYPE", V.Local.sProperty, V.Local.sDefault)
+
+V.Local.sProperty.Set("MinWidth")
+V.Local.sDefault.Set("175")
+Gui.f_Main.GsGcTab5.SetColumnProperty(V.Local.sGV, "PHENOLIC_MAT_TYPE", V.Local.sProperty, V.Local.sDefault)
+Gui.f_Main.GsGcTab5.SetColumnProperty(V.Local.sGV, "PHENOLIC_GLUE_AST", V.Local.sProperty, V.Local.sDefault)
+Gui.f_Main.GsGcTab5.SetColumnProperty(V.Local.sGV, "STEEL_COUNT_TYPE", V.Local.sProperty, V.Local.sDefault)
+
+Gui.f_Main.GsGcTab5.MainView(V.Local.sGV)
+
+F.Intrinsic.Control.ExitSub
+F.Intrinsic.Control.Catch
+	F.Intrinsic.Control.CallSub(ErrorMessage, "ErrorNumber", V.Ambient.ErrorNumber, "ErrorDescription", V.Ambient.ErrorDescription, "Subroutine", V.Ambient.CurrentSubroutine, "UNATTENDED", V.Global.bUnattended, "Project", "6937", "ProjectTitle", "Tooling Type Setup", "Callback", "Unload")
+F.Intrinsic.Control.EndTry
+Program.Sub.FormatTab5Grid.End
+
+Program.Sub.txtToolingType_KeyPressEnter.Start
+F.Intrinsic.Control.Try
+
+F.Intrinsic.Control.If(V.Screen.f_Main!txtToolingType.Text,<>,"")
+	Gui.f_Main.LayoutTab.Enabled(True)
+F.Intrinsic.Control.EndIf
+
+F.Intrinsic.Control.Catch
+	F.Intrinsic.Control.CallSub(ErrorMessage, "ErrorNumber", V.Ambient.ErrorNumber, "ErrorDescription", V.Ambient.ErrorDescription, "Subroutine", V.Ambient.CurrentSubroutine, "UNATTENDED", V.Global.bUnattended, "Project", "6937", "ProjectTitle", "Tooling Type Setup", "Callback", "Unload")
+F.Intrinsic.Control.EndTry
+Program.Sub.txtToolingType_KeyPressEnter.End
+
+Program.Sub.cmdToolTypeBrw_Click.Start
+F.Intrinsic.Control.Try
+V.Local.iWidths.Declare(Long)
+V.Local.sTitles.Declare(String)
+V.Local.sSQL.Declare(String)
+V.Local.sRet.Declare(String)
+
+F.Intrinsic.UI.Browser("Select a Tooling Type", "con", "SELECT DISTINCT TOOLING_TYPE FROM GCG_6937_TOOL_TYPES ORDER BY TOOLING_TYPE","Tooling Type", "500", V.Local.sRet)
+F.Intrinsic.Control.If(V.Local.sRet.Trim,<>,"***CANCEL***")
+	Gui.f_Main.txtToolingType.Text(v.Local.sRet.Trim)
+	
+	'populate grids
+'-------------------------------------
+'	TAB0
+	F.Intrinsic.String.Build("SELECT DISTINCT ATLAS_FILE_TYPE, LAYOUT_FILE_VIEW, VIEW_1UP_FILE, DIE_CUT_VIEW, PRESS_PAPER_FEED FROM GCG_6937_TOOL_TYPES WHERE TOOLING_TYPE = '{0}' ORDER BY ROW_NO", V.Local.sRet.Trim, V.Local.sSQL)
+
+	F.Intrinsic.Control.If(V.DataTable.dtTemp.Exists,=,True)
+		F.Data.DataTable.Close("dtTemp")
+	F.Intrinsic.Control.EndIf
+	F.Data.DataTable.CreateFromSQL("dtTemp", "con", V.Local.sSQL,True)
+	F.Data.DataTable.Merge("dtTemp", "dtTab0", True, 1)
+'--------------------------------------
+'	TAB1
+	F.Intrinsic.String.Build("SELECT DISTINCT DIEBOARD_MATERIAL,DIE_OFFSET_LOC,DIE_CUT_RLE_KNIFE_PT, DIE_HARDWRE_TYPE, DIE_HARDWRE_SIZE,DIE_SHEET_NICK_SIZE, DIE_RUBR_TYPE_MANUF, DIE_EJECT_PUNCH,DIE_EXTRA_RULE_PACK,DIE_EXTRA_RULE_NICK FROM GCG_6937_TOOL_TYPES WHERE TOOLING_TYPE = '{0}' ORDER BY ROW_NO", V.Local.sRet.Trim, V.Local.sSQL)
+
+	F.Intrinsic.Control.If(V.DataTable.dtTemp.Exists,=,True)
+		F.Data.DataTable.Close("dtTemp")
+	F.Intrinsic.Control.EndIf
+	F.Data.DataTable.CreateFromSQL("dtTemp", "con", V.Local.sSQL,True)
+	F.Data.DataTable.Merge("dtTemp", "dtTab1", True, 1)
+'----------------------------------------
+'	TAB2
+	F.Intrinsic.String.Build("SELECT DISTINCT  UP_STRIP_TYPE, MAX_USU_SIZE, UP_STRIP_GRIP_OFFST, UP_STRP_GRP_TYPE, LOW_STRP_TYPE, LSU_GRIP_OFFSET, LSU_SUPP_RAILS, LSU_SHT_LIFT_STYLE, LSU_REAR_STRIP, LSU_PIN_INSTALL_DIR FROM GCG_6937_TOOL_TYPES WHERE TOOLING_TYPE = '{0}' ORDER BY ROW_NO", V.Local.sRet.Trim, V.Local.sSQL)
+
+	F.Intrinsic.Control.If(V.DataTable.dtTemp.Exists,=,True)
+		F.Data.DataTable.Close("dtTemp")
+	F.Intrinsic.Control.EndIf
+	F.Data.DataTable.CreateFromSQL("dtTemp", "con", V.Local.sSQL,True)
+	F.Data.DataTable.Merge("dtTemp", "dtTab2", True, 1)
+'---------------------------------------
+'	TAB3
+	F.Intrinsic.String.Build("SELECT DISTINCT UP_BLNK_PUSHER, UB_PUSH_CLEAR, UB_MAX_SIZE, UB_GRIPPER, UB_GRIP_LN_TYPE, UB_PRESS_BAR_STYLE, UB_PRESS_BAR_INSTALL, LB_TYPE, LB_JOG_TYPE, LB_PRESS_SWORD_TYPE, LB_ELEC_EYE_LOC FROM GCG_6937_TOOL_TYPES WHERE TOOLING_TYPE = '{0}' ORDER BY ROW_NO", V.Local.sRet.Trim, V.Local.sSQL)
+
+	F.Intrinsic.Control.If(V.DataTable.dtTemp.Exists,=,True)
+		F.Data.DataTable.Close("dtTemp")
+	F.Intrinsic.Control.EndIf
+	F.Data.DataTable.CreateFromSQL("dtTemp", "con", V.Local.sSQL,True)
+	F.Data.DataTable.Merge("dtTemp", "dtTab3", True, 1)
+'------------------------------------------
+'	TAB4
+	F.Intrinsic.String.Build("SELECT DISTINCT SPOTSHEET_CUT_SHAPE, SPOTSHEET_THICK, SPOTSHEET_MAT, PM_EMAIL_FMT FROM GCG_6937_TOOL_TYPES WHERE TOOLING_TYPE = '{0}' ORDER BY ROW_NO", V.Local.sRet.Trim, V.Local.sSQL)
+
+	F.Intrinsic.Control.If(V.DataTable.dtTemp.Exists,=,True)
+		F.Data.DataTable.Close("dtTemp")
+	F.Intrinsic.Control.EndIf
+	F.Data.DataTable.CreateFromSQL("dtTemp", "con", V.Local.sSQL,True)
+	F.Data.DataTable.Merge("dtTemp", "dtTab4", True, 1)
+'--------------------------------------------
+'	TAB5
+	F.Intrinsic.String.Build("SELECT DISTINCT PHENOLIC_MAT_TYPE, PHENOLIC_GLUE_AST, STEEL_COUNT_TYPE FROM GCG_6937_TOOL_TYPES WHERE TOOLING_TYPE = '{0}' ORDER BY ROW_NO", V.Local.sRet.Trim, V.Local.sSQL)
+
+	F.Intrinsic.Control.If(V.DataTable.dtTemp.Exists,=,True)
+		F.Data.DataTable.Close("dtTemp")
+	F.Intrinsic.Control.EndIf
+	F.Data.DataTable.CreateFromSQL("dtTemp", "con", V.Local.sSQL,True)
+	F.Data.DataTable.Merge("dtTemp", "dtTab5", True, 1)
+	
+	F.Data.DataTable.AcceptChanges("dtTab0")
+	F.Data.DataTable.AcceptChanges("dtTab1")
+	F.Data.DataTable.AcceptChanges("dtTab2")
+	F.Data.DataTable.AcceptChanges("dtTab3")
+	F.Data.DataTable.AcceptChanges("dtTab4")
+	F.Data.DataTable.AcceptChanges("dtTab5")
+	
+	Gui.f_Main.LayoutTab.Enabled(True)
+	
+F.Intrinsic.Control.Else
+	F.Intrinsic.UI.Msgbox("You must select an existing Tool Type or create a New Tool Type to continue.", "Required Field")
+	Gui.f_Main.cmdToolTypeBrw.SetFocus
+F.Intrinsic.Control.EndIf
+
+F.Intrinsic.Control.ExitSub
+
+F.Intrinsic.Control.Catch
+	F.Intrinsic.Control.CallSub(ErrorMessage, "ErrorNumber", V.Ambient.ErrorNumber, "ErrorDescription", V.Ambient.ErrorDescription, "Subroutine", V.Ambient.CurrentSubroutine, "UNATTENDED", V.Global.bUnattended, "Project", "6937", "ProjectTitle", "Tooling Type Setup", "Callback", "Unload")
+F.Intrinsic.Control.EndTry
+Program.Sub.cmdToolTypeBrw_Click.End
+
+Program.Sub.cmdNew_Click.Start
+F.Intrinsic.Control.Try
+
+Gui.f_Main.txtToolingType.Text("")
+Gui.f_Main.txtToolingType.SetFocus
+
+'Delete the rows from all grids
+F.Data.DataTable.DeleteRow("dtTab0")
+F.Data.DataTable.DeleteRow("dtTab1")
+F.Data.DataTable.DeleteRow("dtTab2")
+F.Data.DataTable.DeleteRow("dtTab3")
+F.Data.DataTable.DeleteRow("dtTab4")
+F.Data.DataTable.DeleteRow("dtTab5")
+
+F.Data.DataTable.AcceptChanges("dtTab0")
+F.Data.DataTable.AcceptChanges("dtTab1")
+F.Data.DataTable.AcceptChanges("dtTab2")
+F.Data.DataTable.AcceptChanges("dtTab3")
+F.Data.DataTable.AcceptChanges("dtTab4")
+F.Data.DataTable.AcceptChanges("dtTab5")
+
+f.Intrinsic.Control.ExitSub
+
+F.Intrinsic.Control.Catch
+	F.Intrinsic.Control.CallSub(ErrorMessage, "ErrorNumber", V.Ambient.ErrorNumber, "ErrorDescription", V.Ambient.ErrorDescription, "Subroutine", V.Ambient.CurrentSubroutine, "UNATTENDED", V.Global.bUnattended, "Project", "6937", "ProjectTitle", "Tooling Type Setup", "Callback", "Unload")
+F.Intrinsic.Control.EndTry
+Program.Sub.cmdNew_Click.End
+
+Program.Sub.cmdSave_Click.Start
+F.Intrinsic.Control.Try
+V.Local.iCnt.Declare(Long)
+V.Local.sToolingType.Declare(String)
+V.Local.sSQL.Declare(String)
+
+V.Local.sToolingType.Set(V.Screen.f_Main!txtToolingType.Text)
+F.Intrinsic.Control.If(V.Local.sToolingType.Trim,<>,"")
+	
+	F.Data.DataTable.AcceptChanges("dtTab0")
+	F.Data.DataTable.AcceptChanges("dtTab1")
+	F.Data.DataTable.AcceptChanges("dtTab2")
+	F.Data.DataTable.AcceptChanges("dtTab3")
+	F.Data.DataTable.AcceptChanges("dtTab4")
+	F.Data.DataTable.AcceptChanges("dtTab5")
+	
+	F.Data.DataTable.AddColumn("dtTab0", "TOOLING_TYPE", "STRING")
+	F.Data.DataTable.SetValue("dtTab0", -1, "TOOLING_TYPE", V.Local.sToolingType.Trim)
+	F.Data.DataTable.AddColumn("dtTab0", "ROW_NO", "INTEGER")
+	F.Intrinsic.Control.For(V.Local.iCnt,0,V.DataTable.dtTab0.RowCount--,1)
+		F.Data.DataTable.SetValue("dtTab0", V.Local.iCnt, "ROW_NO", V.Local.iCnt)
+	F.Intrinsic.Control.Next(V.Local.iCnt)
+	
+	F.Data.DataTable.AddColumn("dtTab1", "TOOLING_TYPE", "STRING")
+	F.Data.DataTable.SetValue("dtTab1", -1, "TOOLING_TYPE", V.Local.sToolingType.Trim)
+	F.Data.DataTable.AddColumn("dtTab1", "ROW_NO", "INTEGER")
+	F.Intrinsic.Control.For(V.Local.iCnt,0,V.DataTable.dtTab1.RowCount--,1)
+		F.Data.DataTable.SetValue("dtTab1", V.Local.iCnt, "ROW_NO", V.Local.iCnt)
+	F.Intrinsic.Control.Next(V.Local.iCnt)
+	
+	F.Data.DataTable.AddColumn("dtTab2", "TOOLING_TYPE", "STRING")
+	F.Data.DataTable.SetValue("dtTab2", -1, "TOOLING_TYPE", V.Local.sToolingType.Trim)
+	F.Data.DataTable.AddColumn("dtTab2", "ROW_NO", "INTEGER")
+	F.Intrinsic.Control.For(V.Local.iCnt,0,V.DataTable.dtTab2.RowCount--,1)
+		F.Data.DataTable.SetValue("dtTab2", V.Local.iCnt, "ROW_NO", V.Local.iCnt)
+	F.Intrinsic.Control.Next(V.Local.iCnt)
+	
+	F.Data.DataTable.AddColumn("dtTab3", "TOOLING_TYPE", "STRING")
+	F.Data.DataTable.SetValue("dtTab3", -1, "TOOLING_TYPE", V.Local.sToolingType.Trim)
+	F.Data.DataTable.AddColumn("dtTab3", "ROW_NO", "INTEGER")
+	F.Intrinsic.Control.For(V.Local.iCnt,0,V.DataTable.dtTab3.RowCount--,1)
+		F.Data.DataTable.SetValue("dtTab3", V.Local.iCnt, "ROW_NO", V.Local.iCnt)
+	F.Intrinsic.Control.Next(V.Local.iCnt)
+	
+	F.Data.DataTable.AddColumn("dtTab4", "TOOLING_TYPE", "STRING")
+	F.Data.DataTable.SetValue("dtTab4", -1, "TOOLING_TYPE", V.Local.sToolingType.Trim)
+	F.Data.DataTable.AddColumn("dtTab4", "ROW_NO", "INTEGER")
+	F.Intrinsic.Control.For(V.Local.iCnt,0,V.DataTable.dtTab4.RowCount--,1)
+		F.Data.DataTable.SetValue("dtTab4", V.Local.iCnt, "ROW_NO", V.Local.iCnt)
+	F.Intrinsic.Control.Next(V.Local.iCnt)
+	
+	F.Data.DataTable.AddColumn("dtTab5", "TOOLING_TYPE", "STRING")
+	F.Data.DataTable.SetValue("dtTab5", -1, "TOOLING_TYPE", V.Local.sToolingType.Trim)
+	F.Data.DataTable.AddColumn("dtTab5", "ROW_NO", "INTEGER")
+	F.Intrinsic.Control.For(V.Local.iCnt,0,V.DataTable.dtTab5.RowCount--,1)
+		F.Data.DataTable.SetValue("dtTab5", V.Local.iCnt, "ROW_NO", V.Local.iCnt)
+	F.Intrinsic.Control.Next(V.Local.iCnt)
+	
+	F.Data.DataTable.AcceptChanges("dtTab0")
+	F.Data.DataTable.AcceptChanges("dtTab1")
+	F.Data.DataTable.AcceptChanges("dtTab2")
+	F.Data.DataTable.AcceptChanges("dtTab3")
+	F.Data.DataTable.AcceptChanges("dtTab4")
+	F.Data.DataTable.AcceptChanges("dtTab5")
+	
+	
+	F.Intrinsic.String.Build("DELETE FROM GCG_6937_TOOL_TYPES WHERE TOOLING_TYPE = '{0}'", V.Local.sToolingType.Trim, V.Local.sSQL)
+	F.ODBC.Connection!con.Execute(V.Local.sSQL)
+	
+	'save all the data to the database
+	F.Data.DataTable.SaveToDB("dtTab0", "con", "GCG_6937_TOOL_TYPES", "TOOLING_TYPE*!*ROW_NO", 256)
+	F.Data.DataTable.SaveToDB("dtTab1", "con", "GCG_6937_TOOL_TYPES", "TOOLING_TYPE*!*ROW_NO", 256)
+	F.Data.DataTable.SaveToDB("dtTab2", "con", "GCG_6937_TOOL_TYPES", "TOOLING_TYPE*!*ROW_NO", 256)
+	F.Data.DataTable.SaveToDB("dtTab3", "con", "GCG_6937_TOOL_TYPES", "TOOLING_TYPE*!*ROW_NO", 256)
+	F.Data.DataTable.SaveToDB("dtTab4", "con", "GCG_6937_TOOL_TYPES", "TOOLING_TYPE*!*ROW_NO", 256)
+	F.Data.DataTable.SaveToDB("dtTab5", "con", "GCG_6937_TOOL_TYPES", "TOOLING_TYPE*!*ROW_NO", 256)
+	
+	F.Data.DataTable.RemoveColumn("dtTab0", "TOOLING_TYPE")
+	F.Data.DataTable.RemoveColumn("dtTab0", "ROW_NO")
+	F.Data.DataTable.RemoveColumn("dtTab1", "TOOLING_TYPE")
+	F.Data.DataTable.RemoveColumn("dtTab1", "ROW_NO")
+	F.Data.DataTable.RemoveColumn("dtTab2", "TOOLING_TYPE")
+	F.Data.DataTable.RemoveColumn("dtTab2", "ROW_NO")
+	F.Data.DataTable.RemoveColumn("dtTab3", "TOOLING_TYPE")
+	F.Data.DataTable.RemoveColumn("dtTab3", "ROW_NO")
+	F.Data.DataTable.RemoveColumn("dtTab4", "TOOLING_TYPE")
+	F.Data.DataTable.RemoveColumn("dtTab4", "ROW_NO")
+	F.Data.DataTable.RemoveColumn("dtTab5", "TOOLING_TYPE")
+	F.Data.DataTable.RemoveColumn("dtTab5", "ROW_NO")
+	
+	F.Data.DataTable.AcceptChanges("dtTab0")
+	F.Data.DataTable.AcceptChanges("dtTab1")
+	F.Data.DataTable.AcceptChanges("dtTab2")
+	F.Data.DataTable.AcceptChanges("dtTab3")
+	F.Data.DataTable.AcceptChanges("dtTab4")
+	F.Data.DataTable.AcceptChanges("dtTab5")
+	
+	F.Intrinsic.UI.Msgbox("Tooling Type Saved")
+F.Intrinsic.Control.Else
+	F.Intrinsic.UI.Msgbox("You must enter or select a Tooling Type before you can continue.", "Required Field")
+	Gui.f_Main.txtToolingType.SetFocus
+F.Intrinsic.Control.EndIf
+
+f.Intrinsic.Control.ExitSub
+F.Intrinsic.Control.Catch
+	F.Intrinsic.Control.CallSub(ErrorMessage, "ErrorNumber", V.Ambient.ErrorNumber, "ErrorDescription", V.Ambient.ErrorDescription, "Subroutine", V.Ambient.CurrentSubroutine, "UNATTENDED", V.Global.bUnattended, "Project", "6937", "ProjectTitle", "Tooling Type Setup", "Callback", "Unload")
+F.Intrinsic.Control.EndTry
+Program.Sub.cmdSave_Click.End
+
+Program.Sub.cmdCancel_Click.Start
+F.Intrinsic.Control.Try
+V.Local.iRet.Declare(String)
+
+F.Intrinsic.UI.Msgbox("Are you sure you want to cancel? Your changes will not be saved.", "Warning", 4, V.Local.iRet)
+F.Intrinsic.Control.If(V.Local.iRet,=,6)
+	F.Intrinsic.Control.CallSub(Unload)
+F.Intrinsic.Control.Else(V.Local.iRet,=,7)
+	F.Intrinsic.Control.ExitSub
+F.Intrinsic.Control.EndIf
+
+F.Intrinsic.Control.Catch
+	F.Intrinsic.Control.CallSub(ErrorMessage, "ErrorNumber", V.Ambient.ErrorNumber, "ErrorDescription", V.Ambient.ErrorDescription, "Subroutine", V.Ambient.CurrentSubroutine, "UNATTENDED", V.Global.bUnattended, "Project", "6937", "ProjectTitle", "Tooling Type Setup", "Callback", "Unload")
+F.Intrinsic.Control.EndTry
+Program.Sub.cmdCancel_Click.End
+
+Program.Sub.f_Main_UnLoad.Start
+F.Intrinsic.Control.Try
+V.Local.iRet.Declare(Long)
+
+F.Intrinsic.UI.Msgbox("Are you sure you want to cancel? Your changes will not be saved.", "Warning", 4, V.Local.iRet)
+F.Intrinsic.Control.If(V.Local.iRet,=,6)
+	'close the connection to the DB
+	F.ODBC.Connection!con.Close
+
+	'end the script
+	F.Intrinsic.Control.End
+F.Intrinsic.Control.Else(V.Local.iRet,=,7)
+	F.Intrinsic.Control.ExitSub
+F.Intrinsic.Control.EndIf
+
+F.Intrinsic.Control.Catch
+	F.Intrinsic.Control.CallSub(ErrorMessage, "ErrorNumber", V.Ambient.ErrorNumber, "ErrorDescription", V.Ambient.ErrorDescription, "Subroutine", V.Ambient.CurrentSubroutine, "UNATTENDED", V.Global.bUnattended, "Project", "6937", "ProjectTitle", "Tooling Type Setup", "Callback", "UnLoad")
+F.Intrinsic.Control.EndTry
+Program.Sub.f_Main_UnLoad.End
+
+Program.Sub.Unload.Start
+F.Intrinsic.Control.Try
+'close the connection to the DB
+F.ODBC.Connection!con.Close
+
+'end the script
+F.Intrinsic.Control.End
+
+F.Intrinsic.Control.Catch
+	F.Intrinsic.Control.CallSub(ErrorMessage, "ErrorNumber", V.Ambient.ErrorNumber, "ErrorDescription", V.Ambient.ErrorDescription, "Subroutine", V.Ambient.CurrentSubroutine, "UNATTENDED", V.Global.bUnattended, "Project", "6937", "ProjectTitle", "Tooling Type Setup", "Callback", "f_Main_UnLoad")
+F.Intrinsic.Control.EndTry
+Program.Sub.Unload.End
+
+Program.Sub.ErrorMessage.Start
+'basic error message for replacing catch block
+'this is really just for when printing the message and ending program
+'pass error number, error description, current subroutine
+'optional callback sub, this will be called before ending
+'optional unattended parameters, those subs may not exist if not using them but won't be called
+F.Intrinsic.Control.Try
+
+V.Local.iError.Declare(Long)
+V.Local.sErrorDescription.Declare(String)
+V.Local.sSubroutine.Declare(String)
+V.Local.sError.Declare(String)
+V.Local.bExists.Declare(Boolean)
+V.Local.sCallback.Declare(String)
+
+V.Local.iError.Set(V.Args.ErrorNumber)
+V.Local.sErrorDescription.Set(V.Args.ErrorDescription)
+V.Local.sSubroutine.Set(V.Args.Subroutine)
+
+'make sure we aren't in an error loop
+F.Intrinsic.Control.If(V.Global.bError)
+	F.Intrinsic.Control.End
+
+F.Intrinsic.Control.EndIf
+V.Global.bError.Set(True)
+
+F.Intrinsic.String.Build("Project: {0}{1}{1}Subroutine: {2}{1}Error Occurred {3} with description {4}{1}{1}GAB Version: {5}", V.Caller.ScriptFile, V.Ambient.Newline, V.Local.sSubroutine, V.Local.iError, V.Local.sErrorDescription, V.Ambient.GABVersion, V.Local.sError)
+
+F.Intrinsic.Variable.ArgExists("UNATTENDED", V.Local.bExists)
+F.Intrinsic.Control.If(V.Local.bExists)
+	F.Intrinsic.Control.If(V.Args.UNATTENDED)
+		F.Intrinsic.Control.CallSub(UnattendedErrorMessage, "MESSAGE", V.Local.sError, "PROJECT", V.Args.PROJECT, "PROJECTTITLE", V.Args.PROJECTTITLE)
+	F.Intrinsic.Control.Else
+		F.Intrinsic.UI.Msgbox(V.Local.sError)
+	F.Intrinsic.Control.EndIf
+F.Intrinsic.Control.Else
+	F.Intrinsic.UI.Msgbox(V.Local.sError)
+F.Intrinsic.Control.EndIf
+
+F.Intrinsic.Variable.ArgExists("Callback", V.Local.bExists)
+F.Intrinsic.Control.If(V.Local.bExists)
+	V.Local.sCallback.Set(V.Args.Callback.Trim)
+	F.Intrinsic.Control.CallSub(V.Local.sCallback)
+F.Intrinsic.Control.EndIf
+
+F.Intrinsic.Control.End
+
+F.Intrinsic.Control.Catch
+	F.Intrinsic.String.Build("Project: {0}{1}{1}Subroutine: {2}{1}Error Occurred {3} with description {4}{1}{1}GAB Version: {5}",V.Caller.ScriptFile,V.Ambient.Newline,V.Ambient.CurrentSubroutine,V.Ambient.ErrorNumber,V.Ambient.ErrorDescription,V.Ambient.GABVersion,V.Local.sError)
+	F.Intrinsic.UI.Msgbox(V.Local.sError)
+	F.Intrinsic.Control.End
+
+F.Intrinsic.Control.EndTry
+Program.Sub.ErrorMessage.End
+
+Program.Sub.Comments.Start
+${$5$}$20.1.8305.18039$}$1
+${$6$}$acollins$}$20221019105439047$}$h98hERc2yV72q0GaUGlwSaoK/aefTdVk3MDOmjKC8J/ZkICjEQGs6zXfFW/p+kMAGAW9yNpGW7ut8b27QizmtQ==
+Program.Sub.Comments.End
